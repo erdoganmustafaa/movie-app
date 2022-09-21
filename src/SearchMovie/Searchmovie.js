@@ -102,7 +102,7 @@ function Searchmovie() {
                         
                             <span className='movie-info-title'>{movie.title}</span>
                             <p className='movie-info-text'>{movie.description}</p></div>
-                            <a className='delete-btn' onClick={()=>filmDelete(movie.id)}>Delete</a><br/><br/>  
+                            <button className='delete-btn' onClick={()=>filmDelete(movie.id)}>Delete</button><br/><br/>  
                         </div>
                        
                         
