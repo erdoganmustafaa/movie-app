@@ -2,6 +2,11 @@ body{
   background: linear-gradient(to right,#2f55ed,#e55465);
   height: 140vh;
 }
+h2{
+  font-size: 38px;
+  font-weight: bold;
+  color: wheat;
+}
 .App {
   text-align: center;
 }
@@ -11,16 +16,13 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 5px solid white;
 }
-.searchbar .main-searchbar h2{
-  font-size: 48px;
-  font-weight: bold;
-  color: white;
-}
+
 .searchbar .main-searchbar input{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
-  width: 250px;
+  width: 450px;
   height: 35px;
   border-radius: 8px;
   outline: none;
@@ -28,12 +30,20 @@ body{
   padding: 8px 20px;
   margin-bottom: 40px;
   filter: drop-shadow(10px 20px 30px black);
+  display: flex;
+  flex-direction: column;
+  
   
 }
 .searchbar .main-searchbar input::placeholder{
   color: rgb(31, 29, 29);
   font-weight: bold;
   opacity: 0.5;
+}
+.main-searchbar{
+  position: relative;
+  top: -205px;
+  right:400px;
 }
 /* <!----------------------------------!>
 /* ------------ Main Movie ------------*/
@@ -62,14 +72,13 @@ body{
   cursor: pointer;
 }
 .main-movie img:hover{
-  transform: translateY(-20px);
+  transform: translateY(-30px);
   filter: drop-shadow(10px 20px 30px black);
 }
 .movie-info{
   background: linear-gradient(to right,#4d5559,#22495b);
   width: 300px;
-  
-  margin-top: -100px;
+  margin-top: -170px;
   color: white;
   font-weight: bold;
   border-radius: 8px;
@@ -95,4 +104,110 @@ body{
   color: white;
   font-weight: bold;
 }
+.formik-form{
+  margin-right: 650px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.field-input{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  width: 250px;
+  height: 35px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 8px 20px;
+  margin-bottom: 40px;
+  filter: drop-shadow(10px 20px 30px black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+/* Delete Button */
+.delete-btn {
+  display: block;
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 90%;
+  margin-top: 20px;
+ }
+ .delete-btn:hover {
+  background-color: #374151;
+ }
+ 
+ .delete-btn:focus {
+  box-shadow: none;
+  outline: 2px solid white;
+  outline-offset: 2px;
+ }
+ 
+ @media (min-width: 768px) {
+  .delete-btn  {
+   padding: .75rem 1.5rem;
+  }
+ }
+/* Submit Button */
+.add-btn {
+  display: block;
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+  margin-top: 20px;
+  
+ }
+ .add-btn:hover {
+  background-color: #374151;
+ }
+ 
+ .add-btn:focus {
+  box-shadow: none;
+  outline: 2px solid white;
+  outline-offset: 2px;
+ }
+ 
+ @media (min-width: 768px) {
+  .add-btn  {
+   padding: .75rem 1.5rem;
+  }
+ }
 
